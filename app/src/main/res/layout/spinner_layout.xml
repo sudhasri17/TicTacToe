@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/easy"
+        style="@style/myButtonStyle"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/easy"/>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/medium"
+        android:layout_below="@+id/easy"
+        android:padding="16dp"
+        style="@style/myButtonStyle"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/medium"/>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/difficult"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        style="@style/myButtonStyle"
+        android:layout_below="@+id/medium"
+        android:text="@string/difficult"/>
+</RelativeLayout>

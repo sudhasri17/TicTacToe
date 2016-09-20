@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D8232A</color>
+    <color name="colorPrimaryDark">#AC1C2C</color>
+    <color name="colorAccent">#313132</color>
+    <color name="secondryTextColor"> #9DA49F</color>
+    <color name="screen_background">#d1d1cf</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

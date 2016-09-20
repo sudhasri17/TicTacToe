@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="ok">Ok</string>
+    <string name="you_won">You Won !!</string>
+    <string name="you_lost">You Lost</string>
+    <string name="won_message">Congratulations!! Start over again</string>
+    <string name="lost_message">That\'s ok, Try again!</string>
+    <string name="match_draw">Match Draw</string>
+    <string name="draw_msg">Shall we try again</string>
+    <string name="choose_player">Who First</string>
+    <string name="play_mode">Play Mode</string>
+    <string name="choose_player_msg">Who makes the first move?</string>
+    <string name="yes">Me</string>
+    <string name="choose_difficulty">"Select a difficulty level"</string>
+    <string name="player_x">Player X</string>
+    <string name="player_o">Player O</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_dialog">System</string>
+    <string name="easy">EASY</string>
+    <string name="medium">MEDIUM</string>
+    <string name="difficult">DIFFICULT</string>
+</resources>
