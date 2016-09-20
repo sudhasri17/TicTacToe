@@ -197,21 +197,28 @@ public class LogicPresenter implements ViewPresenterContract.Presenter
     // updates data and calls switchPlayer
     ///
     @Override
-    public void updateData(int position, Sign sign) {
-        mDataGrid.set(position, sign);
+    public boolean updateData(int position, Sign sign) {
+
         boolean userWon;
-        if (isWin())
+        if ((mCurrentPlayer.getPlayerSign() == sign) && (mDataGrid.get(position) == Sign.EMPTY))
         {
-            userWon = sign.getPlayer() != getSystemPlayer();
-            mActionView.showWin(userWon, mWinningGrid);
+            mDataGrid.set(position, sign);
+            if (isWin())
+            {
+                userWon = sign.getPlayer() != getSystemPlayer();
+                mActionView.showWin(userWon, mWinningGrid);
+            }
+            else if (isBoardFilled())
+            {
+                mActionView.showDraw();
+            }
+            else {
+                switchPlayer();
+            }
+
+            return true;
         }
-        else if (isBoardFilled())
-        {
-            mActionView.showDraw();
-        }
-        else {
-            switchPlayer();
-        }
+        return false;
     }
 
     ///

@@ -22,7 +22,7 @@ public class ViewPresenterContract
 
     public interface Presenter
     {
-        void updateData(int position, Sign sign);
+        boolean updateData(int position, Sign sign);
         ArrayList<Sign> getInitialGrid();
         boolean isWin();
         void startOver();

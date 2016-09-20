@@ -102,11 +102,14 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.TileHolder>
                 public boolean onTouch(View v, MotionEvent event) {
                     if (mSignText.getText().toString().equals(" "))
                     {
-                        if ((mPresenter.getCurrentPlayer() != mPresenter.getSystemPlayer()) && (mWinningGrid == null || mWinningGrid.size() == 0)) {
+                        if (mWinningGrid == null || mWinningGrid.size() == 0) {
                             Sign currentSign = mPresenter.getCurrentPlayer().getPlayerSign();
-                            String text = currentSign.getValue();
-                            mSignText.setText(text);
-                            mPresenter.updateData(mPosition, currentSign);
+                            if (mPresenter.updateData(mPosition, currentSign)) {
+
+                                String text = currentSign.getValue();
+                                mSignText.setText(text);
+                            }
+
                         } else {
                             //don't accept input
                         }
