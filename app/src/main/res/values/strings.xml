@@ -10,7 +10,7 @@
     <string name="lost_message">That\'s ok, Try again!</string>
     <string name="match_draw">Match Draw</string>
     <string name="draw_msg">Shall we try again</string>
-    <string name="choose_player">Who First</string>
+    <string name="choose_player">First Move</string>
     <string name="play_mode">Play Mode</string>
     <string name="choose_player_msg">Who makes the first move?</string>
     <string name="yes">Me</string>
